@@ -1,0 +1,60 @@
+:root {
+  --ltColor: black;
+  --ltBg: white;
+  --dkColor: rgb(199, 199, 199);
+  --dkBg: rgb(61, 61, 61);
+}
+
+html, body {
+  margin: 0 auto;
+  background-color: var(--dkBg);
+  color: var(--dkColor);
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.container {
+  width: auto;
+  font-size: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+.subtext {
+  font-size: 20px;
+}
+
+.grid {
+  background-color: var(--dkBg);
+  width: 450px;
+  height: 450px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.square {
+  background-color: var(--ltBg);
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
